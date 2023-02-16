@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import { StyleProvider, ThemePicker } from 'vcc-ui';
+
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
@@ -9,7 +10,11 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <App />
+    <StyleProvider>
+      <ThemePicker variant="light">
+        <App />
+      </ThemePicker>
+    </StyleProvider>
   </React.StrictMode>
 );
 
