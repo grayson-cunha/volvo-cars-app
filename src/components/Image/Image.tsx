@@ -4,10 +4,11 @@ import { StyledImage } from './Styles';
 
 interface ImageProps {
   src: string;
+  alt: string;
 }
 
-const Image: React.FC<ImageProps> = ({ src }) => {
-  return <StyledImage src={`${src}`} />;
-}
+const Image: React.FC<ImageProps> = ({ src, alt }) => {
+  return <StyledImage src={src} alt={alt} />;
+};
 
 export default Image;
