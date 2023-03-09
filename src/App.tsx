@@ -1,12 +1,7 @@
-import Car from './components/Car/Car';
-import Main from './components/Main/Main';
+import HomePage from './pages/Home/Home';
 
 function App() {
-  return (
-    <Main>
-      <Car />
-    </Main>
-  );
+  return <HomePage />;
 }
 
 export default App;
